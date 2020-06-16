@@ -1,6 +1,55 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+header {
+  background: url("../images/bg-tablet-pattern.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+header nav {
+  padding-top: 10vh;
+  padding-left: 5vw;
+}
+header nav img {
+  width: 27vw;
+}
+header .hero__container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+header .hero__container .hero__container-img {
+  display: flex;
+  justify-content: center;
+}
+header .hero__container .hero__container-img img {
+  width: 80vw;
+}
+header .hero__container .hero__container-text {
+  text-align: center;
+}
+header .hero__container .hero__container-text h1 {
+  color: #242d52;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+header .hero__container .hero__container-text p {
+  padding: 0 30px;
+  color: #9095a7;
+}
+header .hero__container .hero__container-text .header-button {
+  background: #f25f3a;
+  color: white;
+  width: 140px;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
