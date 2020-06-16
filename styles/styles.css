@@ -52,4 +52,19 @@ header .hero__container .hero__container-text .header-button {
   border-radius: 20px;
 }
 
+main .main__container-title {
+  padding: 0 12vw;
+  text-align: center;
+}
+main .main__container-title h2 {
+  color: #242d52;
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+main .main__container-title p {
+  color: #9095a7;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
 /*# sourceMappingURL=styles.css.map */

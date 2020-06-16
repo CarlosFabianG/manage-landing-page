@@ -61,3 +61,21 @@ header {
         }
     }
 }
+
+main {
+    .main__container-title {
+        padding: 0 12vw;
+        text-align: center;
+        
+        h2 {
+            color: $dark-blue;
+            font-size: 1.7rem;
+            margin-bottom: 0;
+        }
+        p {
+            color: $Dark-Grayish-Blue;
+            font-size: .8rem;
+            line-height: 2;
+        }
+    }
+}
