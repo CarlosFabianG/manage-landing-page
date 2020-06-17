@@ -198,14 +198,31 @@ main .main__container-aside .article-paragraph p {
   flex-direction: column;
   align-items: center;
 }
-.slider__container h2 {
+.slider__container .slider__intro {
+  margin-bottom: 40px;
+}
+.slider__container .slider__intro h2 {
   color: #242d52;
 }
-.slider__container article {
+.slider__container .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fafafa;
+  margin: 20px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.slider__container .card .card-text {
+  padding: 0 26px;
+}
+.slider__container .card h4 {
+  color: #242d52;
+}
+.slider__container .card p {
+  color: #9095a7;
+  font-size: 0.8rem;
+  line-height: 2;
 }
 .slider__container .slider-controls {
   margin: 15px 0 40px;

@@ -73,14 +73,32 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    h2 {
-        color: $dark-blue;
+    .slider__intro {
+        margin-bottom: 40px;
+        h2 {
+            color: $dark-blue;
+        }
     }
-    article {
+    
+    .card {
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: $Vary-Light-Gray;
+        margin: 20px;
+        text-align: center;
+        padding-bottom: 25px;
+        .card-text {
+            padding: 0 26px;
+        }
+        h4 {
+            color: $dark-blue;
+        }
+        p {
+            color: $Dark-Grayish-Blue;
+            font-size: .8rem;
+            line-height: 2;
+        }
     }
     .slider-controls {
         margin: 15px 0 40px;
