@@ -3,7 +3,6 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: "Be Vietnam", sans-serif;
-  background-color: #fafafa;
 }
 
 header {
@@ -101,6 +100,21 @@ main .main__container-aside .article-paragraph p {
   color: #9095a7;
   font-size: 0.8rem;
   line-height: 2;
+}
+
+.slider__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider__container h2 {
+  color: #242d52;
+}
+.slider__container article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
 }
 
 .section-simplify {
