@@ -17,17 +17,19 @@
 </head>
 <body>
   <header class="header__container">
-    <nav>
+    <div class="header__nav">
       <img class="header-logo" src="./images/logo.svg">
-      <div class="header-menu">
-        <span>Pricing</span>
-        <span>Product</span>
-        <span>About Us</span>
-        <span>Careers</span>
-        <span>Community</span>
-      </div>
-      <a class="header-button">Get Started</a>
-    </nav>
+      <nav class="header__nav-menu">
+        <ul class="menu-links">
+          <li>Pricing</li>
+          <li>Product</li>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Community</li>
+        </ul>
+      </nav>
+      <nav class="burguer-menu"></nav>
+    </div>
 
     <section class="hero__container">
       <div class="hero__container-text">
@@ -149,6 +151,7 @@
       <input type="radio" name="dot">
       <label for="dot4"></label>
     </div>
+    <a class="button--cta">Get Started</a>
   </section>
 
   <section class="section-simplify">

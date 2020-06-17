@@ -1,10 +1,8 @@
+@import './Components/variables.scss';
+@import './Components/Header.scss';
+@import './Components/Footer.scss';
 
-$bright-red: hsl(12, 88%, 59%);
-$dark-blue: hsl(228, 39%, 23%);
-$Dark-Grayish-Blue: hsl(227, 12%, 61%);
-$Dark-Blue: hsl(233, 12%, 13%);
-$Very-Pale-Red: hsl(13, 100%, 96%);
-$Vary-Light-Gray: hsl(0, 0%, 98%);
+
 
 
 body {
@@ -14,53 +12,7 @@ body {
     font-family: 'Be Vietnam', sans-serif;
 }
 
-header {
-    background: url('../images/bg-tablet-pattern.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    nav {
-        padding-top: 10vh;
-        padding-left: 5vw;
-        img{
-            width: 27vw;
-        }
-    }
 
-    .hero__container {
-        display: flex;
-        flex-direction: column-reverse;
-        .hero__container-img {
-            display: flex;
-            justify-content: center;
-            img {
-                width: 80vw;
-            }
-        }
-        .hero__container-text {
-            text-align: center;
-            h1 {
-                color: $dark-blue;
-                font-size: 2.4rem;
-                text-align: center;
-                font-weight: 700;
-                margin-bottom: 0;
-            }
-            p {
-                padding: 0 30px;
-                color: $Dark-Grayish-Blue;
-            }
-            .header-button {
-                background: $bright-red;
-                color: white;
-                width: 140px;
-                height: 40px;
-                border: 0;
-                border-radius: 20px;
-            }
-        }
-    }
-}
 
 main {
     .main__container-title {
@@ -93,14 +45,16 @@ main {
                 background: $bright-red;
                 color: white;
                 border-radius: 20px;
-                width: 40px;
+                width: 50px;
                 text-align: center;
-                height: 30px;
+                height: 28px;
                 font-size: .9rem;
+                padding-top: 7px;
             }
             h5 {
                 margin: 0;
                 color: $dark-blue;
+                margin-left: 12px;
             }
         }
         .article-paragraph {
@@ -128,6 +82,22 @@ main {
         align-items: center;
         background-color: $Vary-Light-Gray;
     }
+    .slider-controls {
+        margin: 15px 0 40px;
+    }
+    .button--cta {
+        display: inline-block;
+        background: $bright-red;
+        color: white;
+        width: 140px;
+        height: 35px;
+        border: 0;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+        padding-top: 8px;
+        box-shadow: 0 .375em 0.5em $bright-red-shadow;
+    }
 }
 
 .section-simplify {
@@ -149,78 +119,9 @@ main {
         background: $Vary-Light-Gray;
         border-radius: 20px;
         border: 0;
-        height: 30px;
+        height: 35px;
         width: 110px;
         color: $bright-red;
     }
 }
 
-footer {
-    background: $Dark-Blue;
-    color: $Vary-Light-Gray;
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 40px;
-    .logo-icon-section {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        .footer-logo {
-            color: $Vary-Light-Gray;
-            width: 150px;
-            margin: 30px 0;
-        }
-        .icons-container {
-            display: flex;
-            justify-content: space-around;
-            padding-bottom: 13px;
-            img {
-                width: 25px;
-                padding: 0 20px;
-            }
-        }
-    }
-    .menu__section {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 25px;
-        .column__section {
-            display: flex;
-            flex-direction: column;
-        }
-        span {
-            font-size: .8rem;
-            padding-bottom: 15px
-        }
-    }
-    .input__section {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 45px;
-        input {
-            height: 40px;
-            width: 240px;
-            border-radius: 20px;
-            padding-left: 20px;
-            border: 0;
-        }
-        button {
-            height: 40px;
-            width: 60px;
-            border-radius: 20px;
-            border: 0; 
-            background: $bright-red;
-            color: $Vary-Light-Gray;
-            margin-left: 2.5px;
-        }
-    }
-}
-
-.copyright-section {
-    background: $Dark-Blue;
-    color: $Dark-Grayish-Blue;
-    font-size: .7rem;
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: center;
-}

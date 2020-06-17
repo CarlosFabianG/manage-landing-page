@@ -1,0 +1,68 @@
+header {
+    background: url('../images/bg-tablet-pattern.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    .header__nav {
+        padding: 12vh 7vw;
+        display: flex;
+        justify-content: space-between;
+        .header-logo {
+            padding-top: 3px;
+            width: 120px;
+        }
+        .burguer-menu {
+            width: 40px;
+            background: url('../images/icon-hamburger.svg') no-repeat center;
+            margin-bottom: 5px;
+        }
+    }
+    .header__nav-menu {
+        padding-top: 10vh;
+        padding-left: 5vw;
+        display: none;
+        img{
+            width: 27vw;
+        }
+        
+    }
+
+    .hero__container {
+        display: flex;
+        flex-direction: column-reverse;
+        .hero__container-img {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 80vw;
+            }
+        }
+        .hero__container-text {
+            text-align: center;
+            h1 {
+                color: $dark-blue;
+                font-size: 2.4rem;
+                text-align: center;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+            p {
+                padding: 0 30px;
+                color: $Dark-Grayish-Blue;
+            }
+            .header-button {
+                background: $bright-red;
+                color: white;
+                width: 140px;
+                height: 40px;
+                border: 0;
+                border-radius: 20px;
+                box-shadow: 0 .375em 0.5em $bright-red-shadow;
+            }
+        }
+    }
+    .nav-links {
+        display: none;
+    }
+}

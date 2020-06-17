@@ -1,21 +1,29 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-family: "Be Vietnam", sans-serif;
-}
-
 header {
   background: url("../images/bg-tablet-pattern.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
 }
-header nav {
+header .header__nav {
+  padding: 12vh 7vw;
+  display: flex;
+  justify-content: space-between;
+}
+header .header__nav .header-logo {
+  padding-top: 3px;
+  width: 120px;
+}
+header .header__nav .burguer-menu {
+  width: 40px;
+  background: url("../images/icon-hamburger.svg") no-repeat center;
+  margin-bottom: 5px;
+}
+header .header__nav-menu {
   padding-top: 10vh;
   padding-left: 5vw;
+  display: none;
 }
-header nav img {
+header .header__nav-menu img {
   width: 27vw;
 }
 header .hero__container {
@@ -50,96 +58,10 @@ header .hero__container .hero__container-text .header-button {
   height: 40px;
   border: 0;
   border-radius: 20px;
+  box-shadow: 0 0.375em 0.5em rgba(242, 95, 58, 0.26);
 }
-
-main .main__container-title {
-  padding: 0 12vw;
-  text-align: center;
-}
-main .main__container-title h2 {
-  color: #242d52;
-  font-size: 1.7rem;
-  margin-bottom: 0;
-}
-main .main__container-title p {
-  color: #9095a7;
-  font-size: 0.8rem;
-  line-height: 2;
-}
-main .main__container-aside {
-  margin-top: 15vh;
-}
-main .main__container-aside article {
-  margin-bottom: 10vh;
-}
-main .main__container-aside .article-title {
-  display: flex;
-  align-items: center;
-  height: 30px;
-  margin-left: 15px;
-  background: #ffefeb;
-}
-main .main__container-aside .article-title span {
-  background: #f25f3a;
-  color: white;
-  border-radius: 20px;
-  width: 40px;
-  text-align: center;
-  height: 30px;
-  font-size: 0.9rem;
-}
-main .main__container-aside .article-title h5 {
-  margin: 0;
-  color: #242d52;
-}
-main .main__container-aside .article-paragraph {
-  padding: 10px 15px;
-}
-main .main__container-aside .article-paragraph p {
-  margin: 0;
-  color: #9095a7;
-  font-size: 0.8rem;
-  line-height: 2;
-}
-
-.slider__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.slider__container h2 {
-  color: #242d52;
-}
-.slider__container article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fafafa;
-}
-
-.section-simplify {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #f25f3a;
-  padding-bottom: 20vh;
-  padding-top: 15vh;
-}
-.section-simplify h2 {
-  color: #fafafa;
-  display: inline-block;
-  width: 70vw;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 500;
-}
-.section-simplify button {
-  background: #fafafa;
-  border-radius: 20px;
-  border: 0;
-  height: 30px;
-  width: 110px;
-  color: #f25f3a;
+header .nav-links {
+  display: none;
 }
 
 footer {
@@ -210,6 +132,121 @@ footer .input__section button {
   padding-bottom: 30px;
   display: flex;
   justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+main .main__container-title {
+  padding: 0 12vw;
+  text-align: center;
+}
+main .main__container-title h2 {
+  color: #242d52;
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+main .main__container-title p {
+  color: #9095a7;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+main .main__container-aside {
+  margin-top: 15vh;
+}
+main .main__container-aside article {
+  margin-bottom: 10vh;
+}
+main .main__container-aside .article-title {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-left: 15px;
+  background: #ffefeb;
+}
+main .main__container-aside .article-title span {
+  background: #f25f3a;
+  color: white;
+  border-radius: 20px;
+  width: 50px;
+  text-align: center;
+  height: 28px;
+  font-size: 0.9rem;
+  padding-top: 7px;
+}
+main .main__container-aside .article-title h5 {
+  margin: 0;
+  color: #242d52;
+  margin-left: 12px;
+}
+main .main__container-aside .article-paragraph {
+  padding: 10px 15px;
+}
+main .main__container-aside .article-paragraph p {
+  margin: 0;
+  color: #9095a7;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.slider__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider__container h2 {
+  color: #242d52;
+}
+.slider__container article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+}
+.slider__container .slider-controls {
+  margin: 15px 0 40px;
+}
+.slider__container .button--cta {
+  display: inline-block;
+  background: #f25f3a;
+  color: white;
+  width: 140px;
+  height: 35px;
+  border: 0;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding-top: 8px;
+  box-shadow: 0 0.375em 0.5em rgba(242, 95, 58, 0.26);
+}
+
+.section-simplify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f25f3a;
+  padding-bottom: 20vh;
+  padding-top: 15vh;
+}
+.section-simplify h2 {
+  color: #fafafa;
+  display: inline-block;
+  width: 70vw;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.section-simplify button {
+  background: #fafafa;
+  border-radius: 20px;
+  border: 0;
+  height: 35px;
+  width: 110px;
+  color: #f25f3a;
 }
 
 /*# sourceMappingURL=styles.css.map */
