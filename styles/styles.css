@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: "Be Vietnam", sans-serif;
+  background-color: #fafafa;
 }
 
 header {
@@ -65,6 +66,136 @@ main .main__container-title p {
   color: #9095a7;
   font-size: 0.8rem;
   line-height: 2;
+}
+main .main__container-aside {
+  margin-top: 15vh;
+}
+main .main__container-aside article {
+  margin-bottom: 10vh;
+}
+main .main__container-aside .article-title {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-left: 15px;
+  background: #ffefeb;
+}
+main .main__container-aside .article-title span {
+  background: #f25f3a;
+  color: white;
+  border-radius: 20px;
+  width: 40px;
+  text-align: center;
+  height: 30px;
+  font-size: 0.9rem;
+}
+main .main__container-aside .article-title h5 {
+  margin: 0;
+  color: #242d52;
+}
+main .main__container-aside .article-paragraph {
+  padding: 10px 15px;
+}
+main .main__container-aside .article-paragraph p {
+  margin: 0;
+  color: #9095a7;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.section-simplify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f25f3a;
+  padding-bottom: 20vh;
+  padding-top: 15vh;
+}
+.section-simplify h2 {
+  color: #fafafa;
+  display: inline-block;
+  width: 70vw;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.section-simplify button {
+  background: #fafafa;
+  border-radius: 20px;
+  border: 0;
+  height: 30px;
+  width: 110px;
+  color: #f25f3a;
+}
+
+footer {
+  background: #1d1e25;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 40px;
+}
+footer .logo-icon-section {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+footer .logo-icon-section .footer-logo {
+  color: #fafafa;
+  width: 150px;
+  margin: 30px 0;
+}
+footer .logo-icon-section .icons-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 13px;
+}
+footer .logo-icon-section .icons-container img {
+  width: 25px;
+  padding: 0 20px;
+}
+footer .menu__section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+footer .menu__section .column__section {
+  display: flex;
+  flex-direction: column;
+}
+footer .menu__section span {
+  font-size: 0.8rem;
+  padding-bottom: 15px;
+}
+footer .input__section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+footer .input__section input {
+  height: 40px;
+  width: 240px;
+  border-radius: 20px;
+  padding-left: 20px;
+  border: 0;
+}
+footer .input__section button {
+  height: 40px;
+  width: 60px;
+  border-radius: 20px;
+  border: 0;
+  background: #f25f3a;
+  color: #fafafa;
+  margin-left: 2.5px;
+}
+
+.copyright-section {
+  background: #1d1e25;
+  color: #9095a7;
+  font-size: 0.7rem;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
