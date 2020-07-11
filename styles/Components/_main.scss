@@ -1,0 +1,134 @@
+main {
+    .main__container-title {
+        padding: 0 12vw;
+        text-align: center;
+        
+        h2 {
+            color: $dark-blue;
+            font-size: 1.7rem;
+            margin-bottom: 0;
+        }
+        p {
+            color: $Dark-Grayish-Blue;
+            font-size: .8rem;
+            line-height: 2;
+        }
+    }
+    .main__container-aside {
+        article {
+            margin-bottom: 10vh;
+        }
+        margin-top: 15vh;
+        .article-title {
+            display: flex;
+            align-items: center;
+            height: 30px;
+            margin-left: 15px;
+            background: $Very-Pale-Red;
+            span {
+                background: $bright-red;
+                color: white;
+                border-radius: 20px;
+                width: 50px;
+                text-align: center;
+                height: 28px;
+                font-size: .9rem;
+                padding-top: 7px;
+            }
+            h5 {
+                margin: 0;
+                color: $dark-blue;
+                margin-left: 12px;
+            }
+        }
+        .article-paragraph {
+            padding: 10px 15px;
+            p {
+                margin: 0;
+                color: $Dark-Grayish-Blue;
+                font-size: .8rem;
+                line-height: 2;
+            }
+        }
+    }
+}
+
+.slider__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .slider__intro {
+        margin-bottom: 40px;
+        h2 {
+            color: $dark-blue;
+        }
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $Vary-Light-Gray;
+        margin: 20px;
+        text-align: center;
+        padding-bottom: 25px;
+        margin-bottom: 80px;
+        img {
+            position: relative;
+            bottom: 35px;
+            width: 80px;
+        }
+        .card-text {
+            padding: 0 26px;
+        }
+        h4 {
+            color: $dark-blue;
+        }
+        p {
+            color: $Dark-Grayish-Blue;
+            font-size: .8rem;
+            line-height: 2;
+        }
+    }
+    .slider-controls {
+        margin: 15px 0 40px;
+    }
+    .button--cta {
+        display: inline-block;
+        background: $bright-red;
+        color: white;
+        width: 140px;
+        height: 35px;
+        border: 0;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+        padding-top: 8px;
+        box-shadow: 0 .375em 0.5em $bright-red-shadow;
+    }
+}
+
+.section-simplify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $bright-red;
+    padding-bottom: 20vh;
+    padding-top: 15vh;
+    h2 {
+        color: $Vary-Light-Gray;
+        display: inline-block;
+        width: 70vw;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    button {
+        background: $Vary-Light-Gray;
+        border-radius: 20px;
+        border: 0;
+        height: 35px;
+        width: 110px;
+        color: $bright-red;
+    }
+}
