@@ -57,6 +57,18 @@ footer {
             margin-left: 2.5px;
         }
     }
+
+    @include desktop {
+        flex-direction: row;
+        justify-content: space-around;
+        .logo-icon-section {
+            flex-direction: column;
+        }
+        .menu__section {
+            justify-content: space-between;
+            width: 30vw;
+        }
+    }
 }
 
 .copyright-section {

@@ -116,6 +116,18 @@ main {
         padding-top: 8px;
         box-shadow: 0 .375em 0.5em $bright-red-shadow;
     }
+    @include desktop {
+        .slider__intro {
+            margin-bottom: 40px;
+            h2 {
+                color: $dark-blue;
+                font-size: 38px;
+            }
+        }
+        .testimonials__container {
+            display: flex;
+        }
+    }
 }
 
 .section-simplify {
@@ -140,6 +152,16 @@ main {
         height: 35px;
         width: 110px;
         color: $bright-red;
+    }
+    @include desktop {
+            flex-direction: row;
+            padding-bottom: 7vh;
+            padding-top: 7vh;
+            justify-content: space-around;
+            h2 {
+                width: 30vw;
+                text-align: start;
+            }
     }
 
 }

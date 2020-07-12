@@ -87,6 +87,7 @@ header .nav-links {
   header .hero__container {
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
   header .hero__container-img {
     width: 45vw;
@@ -213,6 +214,18 @@ main .main__container-aside .article-paragraph p {
   padding-top: 8px;
   box-shadow: 0 0.375em 0.5em rgba(242, 95, 58, 0.26);
 }
+@media (min-width: 1024px) {
+  .slider__container .slider__intro {
+    margin-bottom: 40px;
+  }
+  .slider__container .slider__intro h2 {
+    color: #242d52;
+    font-size: 38px;
+  }
+  .slider__container .testimonials__container {
+    display: flex;
+  }
+}
 
 .section-simplify {
   display: flex;
@@ -237,6 +250,18 @@ main .main__container-aside .article-paragraph p {
   height: 35px;
   width: 110px;
   color: #f25f3a;
+}
+@media (min-width: 1024px) {
+  .section-simplify {
+    flex-direction: row;
+    padding-bottom: 7vh;
+    padding-top: 7vh;
+    justify-content: space-around;
+  }
+  .section-simplify h2 {
+    width: 30vw;
+    text-align: start;
+  }
 }
 
 footer {
@@ -298,6 +323,19 @@ footer .input__section button {
   background: #f25f3a;
   color: #fafafa;
   margin-left: 2.5px;
+}
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .logo-icon-section {
+    flex-direction: column;
+  }
+  footer .menu__section {
+    justify-content: space-between;
+    width: 30vw;
+  }
 }
 
 .copyright-section {
