@@ -1,4 +1,8 @@
 main {
+
+    .main__wrapper {
+        padding: 0 5vw;
+    }
     .main__container-title {
         padding: 0 12vw;
         text-align: center;
@@ -49,6 +53,12 @@ main {
                 font-size: .8rem;
                 line-height: 2;
             }
+        }
+    }
+    @include desktop {
+        .main__wrapper {
+            display: flex;
+            align-items: baseline;
         }
     }
 }
@@ -131,4 +141,5 @@ main {
         width: 110px;
         color: $bright-red;
     }
+
 }

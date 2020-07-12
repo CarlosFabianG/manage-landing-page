@@ -5,14 +5,14 @@ header {
     background-position: right;
 
     .header__nav {
-        padding: 12vh 7vw;
+        padding: 10vh 7vw;
         display: flex;
         justify-content: space-between;
         .header-logo {
             padding-top: 3px;
             width: 120px;
         }
-        .burguer-menu {
+        .burger-menu {
             width: 40px;
             background: url('../images/icon-hamburger.svg') no-repeat center;
             margin-bottom: 5px;
@@ -20,7 +20,7 @@ header {
     }
     .header__nav-menu {
         padding-top: 10vh;
-        padding-left: 5vw;
+        padding-left: 45vw;
         display: none;
         img{
             width: 27vw;
@@ -64,5 +64,39 @@ header {
     }
     .nav-links {
         display: none;
+    }
+
+    @include desktop {
+        .burger-menu {
+            display: none;
+        }
+        .header__nav-menu {
+            display: flex;
+            padding-top: 0;
+            .menu-links {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                li {
+                    margin-right: 15px;
+                }
+            }
+        }
+        .header__nav {
+            align-items: center;
+        }
+        .hero__container {
+            flex-direction: row;
+            justify-content: space-around;
+            &-img {
+                width: 45vw;
+                img {
+                    width: 100%;
+                }
+            }
+            &-text {
+                width: 40vw;
+            }
+        }
     }
 }

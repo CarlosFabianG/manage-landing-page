@@ -7,7 +7,7 @@ header {
   background-position: right;
 }
 header .header__nav {
-  padding: 12vh 7vw;
+  padding: 10vh 7vw;
   display: flex;
   justify-content: space-between;
 }
@@ -15,14 +15,14 @@ header .header__nav .header-logo {
   padding-top: 3px;
   width: 120px;
 }
-header .header__nav .burguer-menu {
+header .header__nav .burger-menu {
   width: 40px;
   background: url("../images/icon-hamburger.svg") no-repeat center;
   margin-bottom: 5px;
 }
 header .header__nav-menu {
   padding-top: 10vh;
-  padding-left: 5vw;
+  padding-left: 45vw;
   display: none;
 }
 header .header__nav-menu img {
@@ -65,7 +65,43 @@ header .hero__container .hero__container-text .header-button {
 header .nav-links {
   display: none;
 }
+@media (min-width: 1024px) {
+  header .burger-menu {
+    display: none;
+  }
+  header .header__nav-menu {
+    display: flex;
+    padding-top: 0;
+  }
+  header .header__nav-menu .menu-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  header .header__nav-menu .menu-links li {
+    margin-right: 15px;
+  }
+  header .header__nav {
+    align-items: center;
+  }
+  header .hero__container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header .hero__container-img {
+    width: 45vw;
+  }
+  header .hero__container-img img {
+    width: 100%;
+  }
+  header .hero__container-text {
+    width: 40vw;
+  }
+}
 
+main .main__wrapper {
+  padding: 0 5vw;
+}
 main .main__container-title {
   padding: 0 12vw;
   text-align: center;
@@ -116,6 +152,12 @@ main .main__container-aside .article-paragraph p {
   color: #9095a7;
   font-size: 0.8rem;
   line-height: 2;
+}
+@media (min-width: 1024px) {
+  main .main__wrapper {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .slider__container {

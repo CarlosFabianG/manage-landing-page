@@ -17,90 +17,95 @@
 </head>
 <body>
   <header class="header__container">
-    <div class="header__nav">
-      <img class="header-logo" src="./images/logo.svg">
-      <nav class="header__nav-menu">
-        <ul class="menu-links">
-          <li>Pricing</li>
-          <li>Product</li>
-          <li>About Us</li>
-          <li>Careers</li>
-          <li>Community</li>
-        </ul>
-      </nav>
-      <nav class="burguer-menu"></nav>
+    <div class="header__wrapper">
+      <div class="header__nav">
+        <img class="header-logo" src="./images/logo.svg">
+        <nav class="header__nav-menu">
+          <ul class="menu-links">
+            <li>Pricing</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Community</li>
+          </ul>
+        </nav>
+        <nav class="burger-menu"></nav>
+      </div>
+
+      <section class="hero__container">
+        <div class="hero__container-text">
+          <h1>Bring everyone together to build better products.</h1>
+          <p>Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.</p>
+          <button class="header-button">Get Started</button>
+        </div>
+        <div class="hero__container-img">
+          <img src="images/illustration-intro.svg" alt="graphs">
+        </div>
+      </section>
+
     </div>
-
-    <section class="hero__container">
-      <div class="hero__container-text">
-        <h1>Bring everyone together to build better products.</h1>
-        <p>Manage makes it simple for software teams to plan day-to-day 
-        tasks while keeping the larger team goals in view.</p>
-        <button class="header-button">Get Started</button>
-      </div>
-      <div class="hero__container-img">
-        <img src="images/illustration-intro.svg" alt="graphs">
-      </div>
-    </section>
-
   </header>
 
   <main>
-    <section class="main__container-title">
-      <h2>What’s different about Manage?</h2>
-      <p>
-        Manage provides all the functionality your team needs, without 
-        the complexity. Our software is tailor-made for modern digital 
-        product teams. 
-      </p>
-    </section>
+    <div class="main__wrapper">
+      <section class="main__container-title">
+        <h2>What’s different about Manage?</h2>
+        <p>
+          Manage provides all the functionality your team needs, without 
+          the complexity. Our software is tailor-made for modern digital 
+          product teams. 
+        </p>
+      </section>
+  
+      <aside class="main__container-aside">
+        <article class="aside-article">
+          <div class="article-title">
+            <span>01</span>
+            <h5>Track company-wide progress</h5>
+          </div>
+          
+          <div class="article-paragraph">
+            <p>
+              See how your day-to-day tasks fit into the wider vision. Go from 
+              tracking progress at the milestone level all the way done to the 
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </div>
+        </article>
+  
+        <article class="aside-article">
+          <div class="article-title">
+            <span>02</span>
+            <h5>Advanced built-in reports</h5>
+          </div>
+         
+          <div  class="article-paragraph"> 
+            <p>
+              Set internal delivery estimates and track progress toward company 
+              goals. Our customisable dashboard helps you build out the reports 
+              you need to keep key stakeholders informed.
+            </p>
+          </div>
+        </article>
+  
+        <article class="aside-article">
+          <div class="article-title">
+            <span>03</span>
+            <h5>Everything you need in one place</h5>
+          </div>
+          
+          <div class="article-paragraph">
+            <p>
+              Stop jumping from one service to another to communicate, store files, 
+              track tasks and share documents. Manage offers an all-in-one team 
+              productivity solution.
+            </p>
+          </div>
+        </article>
+      </aside>
 
-    <aside class="main__container-aside">
-      <article class="aside-article">
-        <div class="article-title">
-          <span>01</span>
-          <h5>Track company-wide progress</h5>
-        </div>
-        
-        <div class="article-paragraph">
-          <p>
-            See how your day-to-day tasks fit into the wider vision. Go from 
-            tracking progress at the milestone level all the way done to the 
-            smallest of details. Never lose sight of the bigger picture again.
-          </p>
-        </div>
-      </article>
-
-      <article class="aside-article">
-        <div class="article-title">
-          <span>02</span>
-          <h5>Advanced built-in reports</h5>
-        </div>
-       
-        <div  class="article-paragraph"> 
-          <p>
-            Set internal delivery estimates and track progress toward company 
-            goals. Our customisable dashboard helps you build out the reports 
-            you need to keep key stakeholders informed.
-          </p>
-        </div>
-      </article>
-
-      <article class="aside-article">
-        <div class="article-title">
-          <span>03</span>
-          <h5>Everything you need in one place</h5>
-        </div>
-        
-        <div class="article-paragraph">
-          <p>
-            Stop jumping from one service to another to communicate, store files, 
-            track tasks and share documents. Manage offers an all-in-one team 
-            productivity solution.
-          </p>
-        </div>
-      </article>
-    </aside>
+    </div>
   </main>
 
   <section class="slider__container">
@@ -145,6 +150,7 @@
         </div>
       </article>
     </div>
+    <!-- controls -->
     
     <div class="slider-controls">
       <input type="radio" name="dot" checked="checked">
@@ -159,6 +165,7 @@
       <input type="radio" name="dot">
       <label for="dot4"></label>
     </div>
+    
     <a class="button--cta">Get Started</a>
   </section>
 
